@@ -11,7 +11,6 @@ namespace SimpleClassLibrary
         public string Producer { get; set; }
         public double Weight { get; set; }
 
-        // Нове поле для терміну придатності у днях
         public int ShelfLifeInDays { get; set; }
 
         public Product() { }
@@ -27,7 +26,7 @@ namespace SimpleClassLibrary
             ShelfLifeInDays = shelfLifeInDays;
         }
 
-        // Метод для введення терміну придатності
+        //введення терміну придатності
         public void InputShelfLife()
         {
             Console.WriteLine("Оберіть одиниці вимірювання терміну придатності:");
@@ -46,7 +45,7 @@ namespace SimpleClassLibrary
             }
         }
 
-        // Метод для виведення терміну придатності
+        //виведення терміну придатності
         public void DisplayShelfLife()
         {
             Console.WriteLine($"Термін придатності:");
